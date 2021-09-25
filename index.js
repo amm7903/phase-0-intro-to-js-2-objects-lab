@@ -1,4 +1,4 @@
-// Write your solution in this file!
+//Write your solution in this file!
 let employee = {
     streetAddress: '',
     name: ''
@@ -17,4 +17,8 @@ function deleteFromEmployeeByKey(employee,key){
     const newObjects = Object.assign({},employee)
     delete newObjects[key]
     return newObjects
+}
+function destructivelyDeleteFromEmployeeByKey(employee, key){
+    delete employee[key]
+    return employee
 }
